@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WelcomeFragment"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#413759">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="Bienvenue sur Ventilafond"
+        android:textColor="#001f40"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:background="#99bbe0"/>
+
+    <TextView
+        android:id="@+id/poidsIdealTheorique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poids idéal théorique :"
+        android:textColor="#001f40"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:background="#99bbe0"/>
+
+    <TextView
+        android:id="@+id/resultatPoidsIdealTheorique"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="48dp"
+        android:textColor="#001f40"
+        android:textColorHint="#001f40"
+        android:textSize="20sp"
+        android:background="#c7f0e6"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/volume6mL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume courant à 6mL/kg :"
+        android:textColor="#001f40"
+        android:textSize="15sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:background="#99bbe0"/>
+
+    <TextView
+        android:id="@+id/resultatVolume6mL"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="48dp"
+        android:textColor="#001f40"
+        android:textColorHint="#001f40"
+        android:textSize="20sp"
+        android:background="#c7f0e6"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/volume8mL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume courant à 8mL/kg :"
+        android:textColor="#001f40"
+        android:textSize="15sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:background="#99bbe0"/>
+
+    <TextView
+        android:id="@+id/resultatVolume8mL"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="48dp"
+        android:textColor="#001f40"
+        android:textColorHint="#001f40"
+        android:textSize="20sp"
+        android:background="#c7f0e6"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/retourButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:paddingHorizontal="24dp"
+        android:textSize="15sp"
+        android:text="Retour" />
+
+</LinearLayout>

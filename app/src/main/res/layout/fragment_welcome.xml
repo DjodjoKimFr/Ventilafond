@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WelcomeFragment"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#413759">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Bienvenue sur Ventilafond"
+        android:textColor="#001f40"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:background="#99bbe0"/>
+
+    <TextView
+        android:id="@+id/questionTaille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quelle est la taille du patient ?"
+        android:textColor="#001f40"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:padding="8dp"
+        android:background="#99bbe0"/>
+
+    <EditText
+        android:id="@+id/taillePatientEditText"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="48dp"
+        android:hint="Nombre entier, en cm"
+        android:textColor="#001f40"
+        android:textColorHint="#001f40"
+        android:textSize="15sp"
+        android:background="#c7f0e6"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/erreurTaille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#ff0000"
+        android:background="#413759" />
+
+    <TextView
+        android:id="@+id/questionSexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quel est le sexe du patient ?"
+        android:textColor="#001f40"
+        android:textSize="15sp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:background="#99bbe0"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/hommeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="#c7f0e6"
+            android:text="Homme"
+            android:paddingHorizontal="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="#001f40"/>
+
+        <RadioButton
+            android:id="@+id/femmeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="#c7f0e6"
+            android:text="Femme"
+            android:paddingHorizontal="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="#001f40"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:paddingHorizontal="24dp"
+        android:textSize="15sp"
+        android:text="Calcul" />
+
+    <TextView
+        android:id="@+id/infoCalcul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Formule de Robinson : X+0,91x(taille-152,4) avec X=45,5 pour les femmes, et X=50 pour les hommes."
+        android:textColor="#d7dbdb"/>
+
+
+
+</LinearLayout>
