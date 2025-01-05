@@ -60,7 +60,7 @@
         android:text="Quel est le sexe du patient ?"
         android:textColor="#001f40"
         android:textSize="15sp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="10dp"
         android:padding="8dp"
         android:background="#99bbe0"/>
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Formule de Robinson : X+0,91x(taille-152,4) avec X=45,5 pour les femmes, et X=50 pour les hommes."
-        android:textColor="#d7dbdb"/>
+        android:textColor="#d7dbdb" />
 
 
 
